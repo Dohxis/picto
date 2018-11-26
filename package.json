@@ -1,7 +1,10 @@
 {
   "license": "MIT",
-  "name": "@snaptopixel/picto",
-  "author": "Casey Corcoran <https://github.com/snaptopixel>",
+  "name": "picto-graph-x",
+  "authors": [
+    "Casey Corcoran <https://github.com/snaptopixel>",
+    "Domantas Mauruca <domantas.mauruca@gmail.com>"
+  ],
   "version": "0.0.24",
   "description": "Preview, develop and document StencilJS components",
   "main": "dist/index.js",

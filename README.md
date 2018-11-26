@@ -1,3 +1,6 @@
+**Warning!** This is a modified fork, please don't use this version. Instead go to the [real project](https://github.com/snaptopixel/picto).  
+
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/snaptopixel/picto/master/assets/logo.svg?sanitize=true" width="150"/>
 </p>
