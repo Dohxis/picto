@@ -5,7 +5,7 @@
     "Casey Corcoran <https://github.com/snaptopixel>",
     "Domantas Mauruca <domantas.mauruca@gmail.com>"
   ],
-  "version": "0.0.24",
+  "version": "0.0.26",
   "description": "Preview, develop and document StencilJS components",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
