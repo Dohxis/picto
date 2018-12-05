@@ -1,15 +1,13 @@
 # u-story
 
-
-
 <!-- Auto Generated Below -->
 
 
 ## Properties
 
-| Property  | Attribute | Description | Type     |
-| --------- | --------- | ----------- | -------- |
-| `baseurl` | `baseurl` |             | `string` |
+| Property  | Attribute | Description | Type     | Default |
+| --------- | --------- | ----------- | -------- | ------- |
+| `baseurl` | `baseurl` |             | `string` | `"/"`   |
 
 
 ----------------------------------------------

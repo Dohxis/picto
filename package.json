@@ -5,7 +5,7 @@
     "Casey Corcoran <https://github.com/snaptopixel>",
     "Domantas Mauruca <domantas.mauruca@gmail.com>"
   ],
-  "version": "0.0.26",
+  "version": "0.0.28",
   "description": "Preview, develop and document StencilJS components",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -18,10 +18,10 @@
     "prepublishOnly": "npm run build",
     "postversion": "git push && git push --tags && npm publish",
     "build": "stencil build --config stencil.build.ts",
-    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/components.json"
+    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs"
   },
   "devDependencies": {
-    "@stencil/core": "0.15.2",
+    "@stencil/core": "0.16.0",
     "@stencil/stylus": "^0.1.0",
     "front-matter": "https://github.com/snaptopixel/front-matter",
     "marked-ts": "^1.0.0-beta.4",
@@ -35,6 +35,7 @@
     "@stencil/router": "^0.3.1",
     "@types/highlight.js": "^9.12.3",
     "@types/lodash-es": "^4.17.1",
+    "async-file": "^2.0.2",
     "highlight.js": "^9.13.1",
     "lodash-es": "^4.17.11"
   }

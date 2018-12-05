@@ -7,29 +7,23 @@ props:
 
 # picto-preview
 
-Pretty cool My dudes
-
-I like to majke thingnkask
-
-
-
 <!-- Auto Generated Below -->
 
 
 ## Properties
 
-| Property         | Attribute | Description | Type  |
-| ---------------- | --------- | ----------- | ----- |
-| `componentProps` | --        |             | `any` |
-| `component`      | --        |             | `any` |
-| `usage`          | --        |             | `any` |
+| Property         | Attribute         | Description | Type  | Default     |
+| ---------------- | ----------------- | ----------- | ----- | ----------- |
+| `component`      | `component`       |             | `any` | `undefined` |
+| `componentProps` | `component-props` |             | `any` | `{}`        |
+| `usage`          | `usage`           |             | `any` | `undefined` |
 
 
 ## Events
 
-| Event      | Detail | Description |
-| ---------- | ------ | ----------- |
-| `rendered` |        |             |
+| Event      | Description | Detail |
+| ---------- | ----------- | ------ |
+| `rendered` |             | void   |
 
 
 ----------------------------------------------

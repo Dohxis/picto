@@ -13,9 +13,14 @@ export class Pictograph {
   @Prop() baseurl: string = "/";
   @State() currentProps: IComponentProps;
   @State() components: IComponent[] = [];
+  @State() library: { version: string } = { version: "" };
 
   async componentWillLoad() {
-    this.components = await getComponents(this.baseurl + "components.json");
+    const { components, library } = await getComponents(
+      this.baseurl + "components.json"
+    );
+    this.components = components;
+    this.library = library;
   }
 
   onPropsChanged = ({ detail: props }: CustomEvent<IComponentProps>) => {
@@ -31,12 +36,10 @@ export class Pictograph {
       <stencil-router>
         <menu>
           <h4>
-            {document.title}{" "}
-            <ion-icon
-              name="ios-repeat"
-              onClick={() => this.componentWillLoad()}
-            />
+            <div class="picto-header">{document.title}</div>
+            <div class="picto-version">{this.library.version}</div>
           </h4>
+          <div style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.1)", height: '1px', margin: '0 -18px', marginBottom: '15px' }} />
           <picto-nav baseurl={this.baseurl} components={this.components} />
         </menu>
         <main>

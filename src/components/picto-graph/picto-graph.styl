@@ -5,54 +5,72 @@ picto-graph
   right 0
   bottom 0
 
+  .picto-header
+    color #e9f3fd
+    font-weight 400
+    font-size 18px
+
+  .picto-version
+    padding: 4px 8px 5px;
+    margin: 8px 0 0;
+    color: #258aef;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    border: 1px solid #258aef;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    border-radius: 3px;
+
+  h4 > ion-icon
+    color var(--picto-accent-color)
+    cursor pointer
+    font-size 24px
+    float right
+
+  .index
+    pv 5
+
+  menu
+    margin 0
+    ph 1.5
+    pv 2
+    height 100vh
+    box-sizing border-box
+    font-family var(--picto-font-family)
+    color #e9f3fd
+    background var(--picto-pane-background)
+    border-right 1px solid var(--picto-pane-border)
+    min-width 280px
+    overflow-y auto
+    h4
+      @extend $h4
+    > ion-icon
+      color var(--picto-accent-color)
+      float left
+      mr 0.5
+      vertical-align text-bottom
+
+  main
+    ph 5
+    height 100vh
+    flex-grow 1
+    overflow scroll
+    picto-preview
+      mb 4
+    picto-md
+      display block
+
+  aside
+    width 320px
+    flex-shrink 0
+    //margin-right -320px
+    will-change margin-right
+    transition margin-right 200ms ease-in-out
+    &.open
+      margin-right 0
+
 stencil-router
   component(flex)
-
-h4 > ion-icon
-  color var(--picto-accent-color)
-  cursor pointer
-  font-size 24px
-  float right
-
-.index
-  pv 5
-
-menu
-  margin 0
-  ph 1.5
-  pv 2
-  height 100vh
-  box-sizing border-box
-  font-family var(--picto-font-family)
-  color #e9f3fd
-  background var(--picto-pane-background)
-  border-right 1px solid var(--picto-pane-border)
-  min-width 280px
-  overflow-y auto
-  h4
-    @extend $h4
-  > ion-icon
-    color var(--picto-accent-color)
-    float left
-    mr 0.5
-    vertical-align text-bottom
-
-main
-  ph 5
-  height 100vh
-  flex-grow 1
-  overflow scroll
-  picto-preview
-    mb 4
-  picto-md
-    display block
-
-aside
-  width 320px
-  flex-shrink 0
-  //margin-right -320px
-  will-change margin-right
-  transition margin-right 200ms ease-in-out
-  &.open
-    margin-right 0
 

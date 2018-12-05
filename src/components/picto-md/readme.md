@@ -32,9 +32,9 @@ What's up my guy
 
 ## Properties
 
-| Property | Attribute | Description | Type     |
-| -------- | --------- | ----------- | -------- |
-| `source` | `source`  |             | `string` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `source` | `source`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------

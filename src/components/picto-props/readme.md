@@ -7,17 +7,17 @@
 
 ## Properties
 
-| Property    | Attribute | Description | Type  |
-| ----------- | --------- | ----------- | ----- |
-| `component` | --        |             | `any` |
-| `usage`     | --        |             | `any` |
+| Property    | Attribute   | Description | Type  | Default     |
+| ----------- | ----------- | ----------- | ----- | ----------- |
+| `component` | `component` |             | `any` | `undefined` |
+| `usage`     | `usage`     |             | `any` | `undefined` |
 
 
 ## Events
 
-| Event          | Detail | Description |
-| -------------- | ------ | ----------- |
-| `propsChanged` |        |             |
+| Event          | Description | Detail |
+| -------------- | ----------- | ------ |
+| `propsChanged` |             | void   |
 
 
 ----------------------------------------------
